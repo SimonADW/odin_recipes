@@ -1,6 +1,6 @@
 * {
     font-family: Verdana, "Times new roman", sans-serif;
-    list-style-type: none;
+    /* list-style-type: none; */
     text-decoration: none;
 }
 
@@ -9,23 +9,22 @@
     --main-color-bg: rgb(247, 225, 225);    
     --secondary-clr: rgb(210, 209, 209); 
     --secondary-clr-txt: rgb(102, 100, 100);
-    --sec-padding: 80px;
-    
-    
+    --header-padding: 30px;
+   
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+  
 }
 
 header {
-    padding: var(--sec-padding);
+    padding: var(--header-padding);
     background: var(--secondary-clr);
 
 }
 
-.body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
 .hero{
     display: flex;
@@ -33,8 +32,10 @@ header {
     justify-content: center;
     align-items: center;
     background: var(--main-color-bg);
-    padding: var(--sec-padding);
-    height: 50vh;
+    padding: var(--header-padding);
+    height: fit-content;
+    min-height: 60vh;
+
   
 }
 
@@ -42,13 +43,16 @@ footer {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    padding: var(--sec-padding);
+    padding: 20px;
     background: var(--secondary-clr);
+    position: sticky;
+    bottom: 0;
+
 }
 
 
 h1 {
-    color: coral;
+    color: var(--main-color-txt);
     text-align: center;
     font-family: cursive, sans-serif;
 }
@@ -60,35 +64,45 @@ h4 {
 img {     
     width: 500px; 
     height: auto;
-}
-
-.main_image {
     border-radius: 10px;
-    width: 500px; 
-    height: auto;
-    border: 1px solid black;
-    
+   
 }
 
 ul {
-    font-size: 20px;
-    font-style: unset;
+    /* font-size: 20px; */
+  
 }
 
 ol {
-    background-color: beige;
-    
+  
 }
 
 .returnbutton {
     text-align: center;
+    border: 1px solid rgb(80, 79, 79);
+    background: var(--main-color-bg);
+    padding: 6px;
+    border-radius: 3px;  
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: var(--main-color-txt)
 }
 
 a:hover {
         color:rgb(115, 112, 112);
-        text-decoration: underline;
     }
+
 a:visited {
-    color: brown;
+    /* color: rgb(137, 120, 120); */
+}
+
+.returnbutton:hover {
+    background: #e5b8b8;
 }
 
