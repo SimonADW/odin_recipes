@@ -9,22 +9,29 @@
     --main-color-bg: rgb(247, 225, 225);    
     --secondary-clr: rgb(210, 209, 209); 
     --secondary-clr-txt: rgb(102, 100, 100);
-    --header-padding: 30px;
+    --header-padding: 3 0px;
    
 }
 
 body {
     display: flex;
     flex-direction: column;
+    /* height: 100vh; */
+    margin: 0;
   
 }
 
 header {
     padding: var(--header-padding);
     background: var(--secondary-clr);
-
+    
 }
 
+.container-main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
 .hero{
     display: flex;
@@ -34,9 +41,14 @@ header {
     background: var(--main-color-bg);
     padding: var(--header-padding);
     height: fit-content;
-    min-height: 60vh;
+    overflow: auto;  
+}
 
-  
+
+.filler {
+    flex-grow: 1;
+    background: var(--main-color-bg);
+
 }
 
 footer {
@@ -61,10 +73,14 @@ h4 {
     
 }
 
+
+
 img {     
     width: 500px; 
     height: auto;
     border-radius: 10px;
+    padding-top: 20px;
+
    
 }
 
