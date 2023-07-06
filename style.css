@@ -22,15 +22,35 @@ body {
 }
 
 header {
+    /* display: flex;
+    flex-direction: row; */
     padding: var(--header-padding);
     background: var(--secondary-clr);
     
+}
+
+.form-box {
+    /* border: 1px solid var(--main-color-txt); */
+    width: 15vw;
+    height: 60px;
+    margin: 15px;
+    position: absolute;
+    width: fit-content;
+
+}
+
+input, button {
+    height: 40px;
+    border: 1px solid var(--main-color-txt);
+    margin-top: 10px;
+
 }
 
 .container-main {
     height: 100vh;
     display: flex;
     flex-direction: column;
+
 }
 
 .hero{
