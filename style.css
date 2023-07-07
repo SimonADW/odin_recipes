@@ -16,8 +16,8 @@
 body {
     display: flex;
     flex-direction: column;
-    /* height: 100vh; */
     margin: 0;
+    background-color: var(--main-color-bg);
   
 }
 
@@ -43,15 +43,28 @@ input, button {
     height: 40px;
     border: 1px solid var(--main-color-txt);
     margin-top: 10px;
+    border-radius: 5px;
+}
+
+input {
 
 }
 
 .container-main {
     height: 100vh;
     display: flex;
+    align-self: center;
     flex-direction: column;
-
+    width: 70vw;
 }
+
+
+@media screen and (max-width: 600px) {
+ .container-main { 
+    width: 95vw;
+    }
+}
+
 
 .hero{
     display: flex;
@@ -79,7 +92,6 @@ footer {
     background: var(--secondary-clr);
     position: sticky;
     bottom: 0;
-
 }
 
 
