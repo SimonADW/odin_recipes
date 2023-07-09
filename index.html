@@ -5,15 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="Stylesheet" href="./style.css">
+    <script src="recipes-js.js" defer></script>
     <title>Odin Recipes</title>
 </head>
 <body>
     <header>
         <div class="form-box">
             <form action="" method="get">
-                <input type="text" name="Search_value" id="food_search" placeholder=" Enter craving!">
-                <label for="food_search"></label>
-                <button type="submit">Find deliciousness</button>
+            <ul>
+                <li>
+                    <label for="hungryness">Level of hungryness: <span class="hungryness-output"></span></label>
+                </li>
+                <li>
+                    <input type="range" name="hungry" id="hungryness" min="1" max="10" value="5">
+                </li>
+            </ul>
+                <!-- <button type="submit">Find deliciousness</button> -->
             </form>
         </div>
         <h1>Odin Recipes</h1>

@@ -33,7 +33,7 @@ header {
     /* border: 1px solid var(--main-color-txt); */
     width: 15vw;
     height: 60px;
-    margin: 15px;
+    margin: 5px;
     position: absolute;
     width: fit-content;
 
@@ -59,12 +59,13 @@ input {
 }
 
 
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 600px) {   /* Mobile units */ 
  .container-main { 
     width: 95vw;
+    align-self: center;
     }
 }
-
 
 .hero{
     display: flex;
